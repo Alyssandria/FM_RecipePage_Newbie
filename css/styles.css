@@ -1,0 +1,138 @@
+:root{
+    /*PRIMARY COLORS*/
+    --Nutmeg: hsl(14, 45%, 36%);
+    --Dark-Raspberry: hsl(332, 51%, 32%);
+
+    /* SECONDARY COLORS */
+    --White: hsl(0, 0%, 100%);
+    --Rose-White: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --Light-Grey: hsl(30, 18%, 87%);
+    --Wenge-Brown: hsl(30, 10%, 34%);
+    --Dark-Charcoal: hsl(24, 5%, 18%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Outfit", sans-serif; 
+    font-style: normal;
+    color: var(--Dark-Charcoal);
+}
+
+p, li{
+    color: var(--Wenge-Brown);
+}
+h1, h2{
+    font-family: "Young Serif", serif;
+}
+
+h1{
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+h3{
+    color: var(--Dark-Raspberry);
+}
+
+h2, .values li{
+    font-weight: bold;
+    color: var(--Nutmeg);
+}
+
+
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    width: 100%;
+}
+
+.main-img{
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.contents{
+    margin: 2em auto;
+    width: 90%;
+}
+
+li{
+    margin: 1em 0 ;
+    list-style-position: outside;
+    padding-left: 1em;
+}
+
+li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
+.sub-info li::marker{
+    color: var(--Dark-Raspberry);
+}
+.sub-info{
+    padding: 1.5em;
+    background: hsl(330, 100%, 98%);
+    border-radius: 20px;
+    margin: 1.5em 0;
+}
+
+.cont{
+    margin: 2em 0;
+}
+ul{
+    margin: 1.5em;
+}
+
+ol{
+    margin: 1.5em;
+}
+
+hr{
+    border-color: rgba(247, 246, 246, 0.3);
+}
+
+
+.nutri-info ul li{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1em;
+}
+
+.nutri-info span{
+    width: 50%;
+}
+
+.nutrient-value{
+    font-weight: bold;
+    color: var(--Nutmeg);
+}
+
+@media (min-width: 769px){
+    .main-img{
+        margin: 2em auto;
+        width: 90%;
+        border-radius: 20px;
+    }
+
+    img{
+        border-radius: 20px;
+    }
+
+}
+
+
+
+
